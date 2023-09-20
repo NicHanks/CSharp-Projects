@@ -1,4 +1,6 @@
 using System;
+using System.Net;
+using System.Collections.Generic;
 
 class Program
 {
@@ -11,7 +13,23 @@ class Program
         nub = new List<int>();
         Console.WriteLine(nub);
         numbers.Add(3);
-        
+
+        Console.WriteLine("Enter a list of numbers, type 0 when finished.");
+        int webResponse = 0;
+        List<int> numList = [];
+        do
+        {
+            Console.Write("Enter number: ");
+            webResponse = Console.Read();
+            numList.Add(webResponse);
+
+        } while (webResponse != 0);
+        int sum = numList.Add();
+        int average = numList.Average();
+        int largestNum = numList.();
+        Console.Write($"The sum is: {sum}");
+        Console.Write($"The average is: {average}");
+        Console.Write($"  The largest number is: {largestNum}");    
 
     }
 }
