@@ -15,7 +15,7 @@ class Program
                 Console.WriteLine("You guessed it!");
             } 
             else if (response > randomNumber)
-           {
+            {
             Console.WriteLine("Lower");
             } 
             else
@@ -25,3 +25,4 @@ class Program
         }
     }
 }
+
