@@ -15,25 +15,37 @@ class Program
         // numbers.Add(3);
 
         Console.WriteLine("Enter a list of numbers, type 0 when finished.");
-        int webResponse = 0;
+        int response = 1;
         List<int> numList;
         numList = new List<int>();
 
-        do
+        while (response != 0)
         {
             Console.Write("Enter number: ");
-            webResponse = Console.Read();
-            numList.Add(webResponse);
+            string userInput = Console.ReadLine();
+            if (int.TryParse(userInput, out int parsedResponse))
+            {
+                response = parsedResponse;
+                if (response != 0)
+                {
+                numList.Add(response);
+                }
 
-        } while (webResponse != 0);
+            }
+            else
+            {
+                Console.WriteLine("Invalid input. Please enter a valid number.");
+            }
+
+        } 
 
         int sum = numList.Sum();
         double average = numList.Average();
         int largestNum = numList.Max();
 
-        Console.Write($"The sum is: {sum}");
-        Console.Write($"The average is: {average}"); 
-        Console.Write($"  The largest number is: {largestNum}");    
+        Console.WriteLine($"The sum is: {sum}");
+        Console.WriteLine($"The average is: {average}"); 
+        Console.WriteLine($"The largest number is: {largestNum}");    
 
     }
 }

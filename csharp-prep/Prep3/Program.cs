@@ -10,7 +10,8 @@ class Program
         do
         {
             Console.Write("What is your guess? ");
-            response = Console.Read();
+            string response1 = Console.ReadLine();
+            response = int.Parse(response1);
             if (response == randomNumber){
                 Console.WriteLine("You guessed it!");
             } 
@@ -21,7 +22,7 @@ class Program
             else
             {
             Console.WriteLine("Higher");
-            } while (response != randomNumber);
-        }
+            } 
+        } while (response != randomNumber);
     }
 }
