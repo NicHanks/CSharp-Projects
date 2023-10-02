@@ -7,7 +7,7 @@ public class Team {
     private int _wins = 0;
     private int _losses = 0;
     
-    public Team(string name);
+    public Team(string name)
     {
         _name = name; 
     }
@@ -23,16 +23,21 @@ public class Team {
     {
         _losses++; 
     }
-    public void DisplayRoster();
+    public void DisplayRoster()
     {
         Console.WriteLine();
         Console.WriteLine(_name);
-        Console.WriteLine($"Wins: {_winds} Losses: {_losses}");
+        Console.WriteLine($"Wins: {_wins} Losses: {_losses}");
         Console.WriteLine("------------------------");
         foreach (Player p in _roster)
         {
             p.Display();
         }
         Console.WriteLine();
+    }
+
+    public string GetTeamName()
+    {
+        return _name;
     }
 }
