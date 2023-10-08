@@ -3,9 +3,9 @@ using System.IO;
 class Entries {
     //Attributes
     private string _fileOfEntries = "entries.txt";
-    private string _prompt;
-    private string _entry;
-    private string _dateTime;
+    //private string _prompt;
+    //private string _entry;
+    //private string _dateTime;
 
     //Constructor
     public Entries() {
@@ -13,13 +13,12 @@ class Entries {
     }
 
     //Methods
-    public void AddEntryToEntries(string input) {
+    public void AddEntryToEntries(string datime, string randomGeneratedPrompt, string input) {
         using (StreamWriter outputFile = new StreamWriter(_fileOfEntries))
         {
             // You can add text to the file with the WriteLine method
-            outputFile.WriteLine("This will be the first line in the file.");
             string dateTime = GetCurrentDateTimeStamp();
-            outputFile.WriteLine($"{dateTime} -- {input}");
+            outputFile.WriteLine($"{datime} -- {randomGeneratedPrompt} -- {input}");
         }
     }
 
