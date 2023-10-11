@@ -12,6 +12,8 @@ class Journal {
         
     }
     public void DisplayAllEntries() {
+        // instructors version
+        Console.Clear(); 
         string[] entries = System.IO.File.ReadAllLines(_entriesFileType);
         foreach (string entry in entries) {
             Console.WriteLine(entry);
