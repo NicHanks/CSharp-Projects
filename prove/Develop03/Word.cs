@@ -1,12 +1,15 @@
+using System;
+using System.Collections.Generic;
+
 class Word {
     //Attributes
-    private string _word;
+    //private string _word;
 
     //Constructor
-    public Word(){
-
+    public Word()
+    {
     }
-
+    
     //Methods
     public string HideWord(string x) {
         string newWord = "";

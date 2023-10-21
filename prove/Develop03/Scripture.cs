@@ -7,29 +7,38 @@ class Scripture {
     //Attributes
     private string _reference;
     private string _scriptureText;
-    private string[] _editedWordslist;
+    private string[] _editedWordslist = new string[0];
 
     // Constructors: 
     public Scripture(string referenceInfo, string verseText) {
         _reference = referenceInfo;
         _scriptureText = verseText; 
-        _editedWordslist = verseText.Split(" ");
+        string[] strings = verseText.Split(" ");
+        _editedWordslist = strings;
+        //Console.WriteLine(_editedWordslist);
     }
 
     // Methods: 
     public void HideWords() {
-        int numWordsToPick = 3;
+        int numWordsToPick = 1;
         for (int i = 0; i < numWordsToPick; i++) {
             int randomIndex = random.Next(0, _editedWordslist.Length);
             string pickedWord = _editedWordslist[randomIndex];
             string underscoredWord = wordClass.HideWord(pickedWord);
             _editedWordslist[randomIndex] = underscoredWord;
         } 
-        Console.WriteLine(_editedWordslist);
     }
-    public string DisplayVerse() {
-        string oneString = _scriptureText + _reference;
-        return oneString;
+    public void DisplayVerse() {
+        string oneString = _reference + _scriptureText;
+        Console.WriteLine(oneString);
+    }
+    public void DisplayModifiedVerse() {
+        //string strings = _reference + _editedWordslist;
+        Console.Write(_reference);
+        foreach (string sting in _editedWordslist) {
+            Console.Write(sting + " ");
+        }
+        Console.WriteLine();
     }
     // IsCompletelyHidden()
     // UserInput()
