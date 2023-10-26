@@ -4,12 +4,17 @@
 
 // Book hp = new Book("harry Potter", "JK Rowling");
 // hp.Display();
-
+using System;
 class Program
 {
     static void Main(string[] args)
     {
-        Book harryPotter = new Book("Harry Potter", "JK Rowling");
+        Book harryPotter = new Book("Harry", "zandra");
         harryPotter.Display();
+        Book cats = new Book("cats", "Murphy");
+        cats.CheckOut();
+        cats.Display();
+        Dvd gIJoe = new Dvd("GI Joe");
+        gIJoe.Display();
     }
 }

@@ -1,24 +1,33 @@
-public class Book {
+public class Book : Loanable 
+{
     //attributes
     private string _author;
-    private string _name;
+    private string _title;
     private int _timesRead;
     private Boolean _available;
+    //private string _isbn;
+    //private long _upc;
 
     //methods
 
-    public Book(string name, string author) {
-        _name = name;
+    public Book(string title, string author) 
+    {
+        _title = title;
         _author = author;
         _timesRead = 0;
         _available = true;
     }
 
-    public void Display() {
-        Console.WriteLine(_name);
+    public override void Display() 
+    {
+        ShowbookDetails();
+    }
+    public void ShowbookDetails()
+    {
+        Console.WriteLine(_title);
         Console.WriteLine(_author);
         Console.WriteLine(_available);
-        Console.WriteLine(_timesRead);
+        Console.WriteLine($"Times read: {_timesRead}");
     }
     public bool IsAvailable() 
     {
