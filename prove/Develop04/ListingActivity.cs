@@ -9,7 +9,7 @@ class ListingActivity
     "What are personal strengths of yours?",
     "Who are people that you have helped this week?",
     "When have you felt the Holy Ghost this month?",
-    "Who are some of your personal heroes?"};
+    "Who are some of your personal heroes? "};
     //Constructor(s)
     public ListingActivity(string activityname, string description, int duration) //: base(activityname, description, duration)
     {
