@@ -22,7 +22,7 @@ class Program
 
         } else if (input == "3")
         {
-            ListingActivity listing = new ListingActivity(); 
+            //ListingActivity listing = new ListingActivity(); 
         }
         } while (input != "4");
         

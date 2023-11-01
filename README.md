@@ -1,6 +1,6 @@
 # cse210-student-template
 Nicholas Hanks
-//yolo second copy fixed the red class squiggly
+yolo second copy fixed the red class squiggly
 
 This repository contains the starter code for many different projects. They are arranged as follows:
 
