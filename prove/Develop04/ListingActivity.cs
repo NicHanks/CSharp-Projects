@@ -1,9 +1,9 @@
 
 
-class ListingActivity
+class ListingActivity : Activity
 {
     //Attributes
-    private string _discriptionOfActvity = "Welcome to the Listing Activity\n\nThis activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.\nHow long, in seconds, would you like your session to be? ";
+    private string _discriptionOfActvity = "Welcome to the Listing Activity!\n\nThis activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.\n\nHow long, in seconds, would you like your session to be? ";
     private List<string> _listOfPrompts = new List<string> 
     {"Who are people that you appreciate?",
     "What are personal strengths of yours?",
@@ -11,7 +11,7 @@ class ListingActivity
     "When have you felt the Holy Ghost this month?",
     "Who are some of your personal heroes? "};
     //Constructor(s)
-    public ListingActivity(string activityname, string description, int duration) //: base(activityname, description, duration)
+    public ListingActivity(string activityname, string description, int duration) : base(activityname, description, duration)
     {
         // _name = "Reflecting";
         // _description = "This activity will help you reflect on times ...";
@@ -20,7 +20,7 @@ class ListingActivity
     //Methods
     public void DisplayMessage()
     {
-
+        Console.WriteLine($"Welcome to the {_activityName} activity!\n\n{_discriptionOfActvity}");
     }
     public void DisplayRandomPrompt()
     {

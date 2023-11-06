@@ -1,18 +1,19 @@
 
-class BreathingActivity
+class BreathingActivity : Activity
 {
     //Attributes
-    private string _descriptionOfActivity = "Welcome to the Breathing Activity\n\nThis activity will help you relax by walking your through breathing in and out slowly. Clear your mind and focus on your breathing.\nHow long, in seconds, would you like your session to be? ";
+    private string _activity;
+    private string _descriptionOfActivity = "This activity will help you relax by walking your through breathing in and out slowly. Clear your mind and focus on your breathing.\n\nHow long, in seconds, would you like your session to be? ";
 
     //Constructor(s)
-    public BreathingActivity()
+    public BreathingActivity(string activityname, string description, int duration) : base(activityname, description, duration)
     {
-
+        _activity = activityname;
     }
     //Methods
     public void DisplayMessage()
     {
-
+        Console.WriteLine($"Welcome to the {_activity} activity!\n\n{_descriptionOfActivity}\n");
     }
     public void DisplaySeriesOfMessages()
     {
