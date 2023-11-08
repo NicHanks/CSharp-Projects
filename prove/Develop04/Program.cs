@@ -8,17 +8,13 @@ class Program
         string input;
         do 
         {
-            Console.WriteLine("Menu options:\n  1. Breathing Activity\n  2. Relfecting Activity \n  3. Listing Activity\n  4. Quit\nSelect a choice from the menu: ");
+            Console.WriteLine("Menu options:\n  1. Breathing Activity\n  2. Relfecting Activity \n  3. Listing Activity\n  4. Dojo\n  5. Quit\nSelect a choice from the menu: ");
             input = Console.ReadLine();
             Console.Clear();
             if (input == "1")
             {
                 BreathingActivity instance = new BreathingActivity("Breathing", "yolo", 0);
-                instance.DisplayMessage();
-                instance.DisplayStartingMessage();
-                instance.DisplayCountDown();
-                instance.DisplaySeriesOfMessages();
-                instance.DisplayEndingMessage();
+                instance.RunActivity();
             } else if (input == "2")
             {
                 ReflectingActivity reflecting = new ReflectingActivity("Reflecting", "yolo", 0);
@@ -32,9 +28,13 @@ class Program
             } else if (input == "3")
             {
                 ListingActivity listing = new ListingActivity("Listing", "yolo", 0); 
-                listing.DisplayList();
+                listing.RunActivity();
+            } else if (input == "4")
+            {
+                Dojo d = new Dojo("Dojo", "yolo", 0); 
+                d.RunActivity();
             }
-        } while (input != "4");
+        } while (input != "5");
        
     }
 

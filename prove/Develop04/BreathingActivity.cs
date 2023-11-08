@@ -13,17 +13,38 @@ class BreathingActivity : Activity
         
     }
     //Methods
+    public void RunActivity()
+    {
+        DisplayMessage();
+        DisplayStartingMessage();
+        DisplayCountDown();
+        Thread.Sleep(3000);
+        DisplaySeriesOfMessages();
+        DisplayEndingMessage();
+    }
     public void DisplayMessage()
     {
         Console.WriteLine($"Welcome to the {_activity} activity!\n\n{_descriptionOfActivity}\n");
     }
     public void DisplaySeriesOfMessages()
     {
-        //"Breathe in..."
-        //"Breathe out..."
+        for (int i = 0; i < 4; i++)
+        {
+            Console.WriteLine("Breathe in...");
+            Thread.Sleep(4000);
+            Console.WriteLine("Breathe out...");
+            Thread.Sleep(4000);
+        }
     }
     public void DisplayCountDown()
     {
+        for (int i = 0; i < 3; i++)
+        {
+            Console.Write(i);
+            Thread.Sleep(1000);
+            Console.Write("\b \b");
+
+        }
 
     }
 }
