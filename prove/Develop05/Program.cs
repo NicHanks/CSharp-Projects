@@ -11,10 +11,10 @@ class Program
         int _points = 0;
         string _userInput = "";
         List<Goal> _listOfGoals = new List<Goal>();
+        Console.WriteLine($"Hello! You have {_points}!");
         do 
         {
-            Console.WriteLine(@$"You have {_points}!
-        
+            Console.WriteLine(@$"
 Menu Options:
     Create New Goal[1]
     List Goals[2]

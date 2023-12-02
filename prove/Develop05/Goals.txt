@@ -1,1 +1,1 @@
-simple goal | scrip | 5
+simple goal | simpp | 1

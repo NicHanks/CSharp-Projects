@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nicha\\Documents\\OneDrive\\Develop05\\Develop05.csproj",
+      "projectUniqueName": "C:\\Users\\nicha\\Documents\\OneDrive\\Documents\\BYUI\\FALL2023\\cse210\\prove\\Develop05\\Develop05.csproj",
       "projectName": "Develop05",
-      "projectPath": "C:\\Users\\nicha\\Documents\\OneDrive\\Develop05\\Develop05.csproj",
+      "projectPath": "C:\\Users\\nicha\\Documents\\OneDrive\\Documents\\BYUI\\FALL2023\\cse210\\prove\\Develop05\\Develop05.csproj",
       "packagesPath": "C:\\Users\\nicha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nicha\\Documents\\OneDrive\\Develop05\\obj\\",
+      "outputPath": "C:\\Users\\nicha\\Documents\\OneDrive\\Documents\\BYUI\\FALL2023\\cse210\\prove\\Develop05\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nicha\\AppData\\Roaming\\NuGet\\NuGet.Config"
