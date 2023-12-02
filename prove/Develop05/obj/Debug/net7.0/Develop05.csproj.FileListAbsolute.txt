@@ -1,0 +1,29 @@
+C:\Users\nicha\OneDrive - BYU-Idaho\BYUI\FALL2023\cse210-1\prove\Develop05\bin\Debug\net7.0\Develop05.exe
+C:\Users\nicha\OneDrive - BYU-Idaho\BYUI\FALL2023\cse210-1\prove\Develop05\bin\Debug\net7.0\Develop05.deps.json
+C:\Users\nicha\OneDrive - BYU-Idaho\BYUI\FALL2023\cse210-1\prove\Develop05\bin\Debug\net7.0\Develop05.runtimeconfig.json
+C:\Users\nicha\OneDrive - BYU-Idaho\BYUI\FALL2023\cse210-1\prove\Develop05\bin\Debug\net7.0\Develop05.dll
+C:\Users\nicha\OneDrive - BYU-Idaho\BYUI\FALL2023\cse210-1\prove\Develop05\bin\Debug\net7.0\Develop05.pdb
+C:\Users\nicha\OneDrive - BYU-Idaho\BYUI\FALL2023\cse210-1\prove\Develop05\obj\Debug\net7.0\Develop05.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nicha\OneDrive - BYU-Idaho\BYUI\FALL2023\cse210-1\prove\Develop05\obj\Debug\net7.0\Develop05.AssemblyInfoInputs.cache
+C:\Users\nicha\OneDrive - BYU-Idaho\BYUI\FALL2023\cse210-1\prove\Develop05\obj\Debug\net7.0\Develop05.AssemblyInfo.cs
+C:\Users\nicha\OneDrive - BYU-Idaho\BYUI\FALL2023\cse210-1\prove\Develop05\obj\Debug\net7.0\Develop05.csproj.CoreCompileInputs.cache
+C:\Users\nicha\OneDrive - BYU-Idaho\BYUI\FALL2023\cse210-1\prove\Develop05\obj\Debug\net7.0\Develop05.sourcelink.json
+C:\Users\nicha\OneDrive - BYU-Idaho\BYUI\FALL2023\cse210-1\prove\Develop05\obj\Debug\net7.0\Develop05.dll
+C:\Users\nicha\OneDrive - BYU-Idaho\BYUI\FALL2023\cse210-1\prove\Develop05\obj\Debug\net7.0\refint\Develop05.dll
+C:\Users\nicha\OneDrive - BYU-Idaho\BYUI\FALL2023\cse210-1\prove\Develop05\obj\Debug\net7.0\Develop05.pdb
+C:\Users\nicha\OneDrive - BYU-Idaho\BYUI\FALL2023\cse210-1\prove\Develop05\obj\Debug\net7.0\Develop05.genruntimeconfig.cache
+C:\Users\nicha\OneDrive - BYU-Idaho\BYUI\FALL2023\cse210-1\prove\Develop05\obj\Debug\net7.0\ref\Develop05.dll
+C:\Users\nicha\Documents\OneDrive\Develop05\bin\Debug\net7.0\Develop05.exe
+C:\Users\nicha\Documents\OneDrive\Develop05\bin\Debug\net7.0\Develop05.deps.json
+C:\Users\nicha\Documents\OneDrive\Develop05\bin\Debug\net7.0\Develop05.runtimeconfig.json
+C:\Users\nicha\Documents\OneDrive\Develop05\bin\Debug\net7.0\Develop05.dll
+C:\Users\nicha\Documents\OneDrive\Develop05\bin\Debug\net7.0\Develop05.pdb
+C:\Users\nicha\Documents\OneDrive\Develop05\obj\Debug\net7.0\Develop05.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nicha\Documents\OneDrive\Develop05\obj\Debug\net7.0\Develop05.AssemblyInfoInputs.cache
+C:\Users\nicha\Documents\OneDrive\Develop05\obj\Debug\net7.0\Develop05.AssemblyInfo.cs
+C:\Users\nicha\Documents\OneDrive\Develop05\obj\Debug\net7.0\Develop05.csproj.CoreCompileInputs.cache
+C:\Users\nicha\Documents\OneDrive\Develop05\obj\Debug\net7.0\Develop05.dll
+C:\Users\nicha\Documents\OneDrive\Develop05\obj\Debug\net7.0\refint\Develop05.dll
+C:\Users\nicha\Documents\OneDrive\Develop05\obj\Debug\net7.0\Develop05.pdb
+C:\Users\nicha\Documents\OneDrive\Develop05\obj\Debug\net7.0\Develop05.genruntimeconfig.cache
+C:\Users\nicha\Documents\OneDrive\Develop05\obj\Debug\net7.0\ref\Develop05.dll

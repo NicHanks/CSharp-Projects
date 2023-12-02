@@ -13,16 +13,15 @@ class Program
         List<Goal> _listOfGoals = new List<Goal>();
         do 
         {
-            Console.WriteLine(@"You have {_points}!
+            Console.WriteLine(@$"You have {_points}!
         
-            Menu Options:
-                Create New Goal[1]
-                List Goals[2]
-                Save Goals[3]
-                Load Goals[4]
-                Record Event[5]
-                Quit[6]
-            Select a choice from the menu: ");       
+Menu Options:
+    Create New Goal[1]
+    List Goals[2]
+    Save Goals[3]
+    Load Goals[4]
+    Quit[6]
+Select a choice from the menu: ");       
             _userInput = Console.ReadLine();
             if (_userInput == "1")
             {
@@ -73,7 +72,7 @@ class Program
                 //List Goals
                 foreach (Goal i in _listOfGoals)
                 {
-                    Console.WriteLine(i);
+                    Console.WriteLine(i.GetStringRepresentation());
                 }
             } if (_userInput == "3")
             {
@@ -89,7 +88,7 @@ class Program
             } if (_userInput == "4")
             {
                 //Load Goals
-                string[] lines = System.IO.File.ReadAllLines("StepGoals.txt");
+                string[] lines = System.IO.File.ReadAllLines("Goals.txt");
                 foreach (string line in lines)
                 {
                     string[] parts = line.Split("|");
@@ -97,12 +96,17 @@ class Program
                     if (z == "simp goal")
                     {
                         Goal goal = new Goal(parts[0], parts[1], int.Parse(parts[2]));
+                        _listOfGoals.Add(goal);
+
                     } if (z == "Big goal")
                     {
-                        BigGoal bgoal = new BigGoal(parts[0], parts[1], int.Parse(parts[2]));
+                        BigGoal goal = new BigGoal(parts[0], parts[1], int.Parse(parts[2]));
+                        _listOfGoals.Add(goal);
+
                     } if (z == "IncrementalGoal")
                     {
-                        IncrementalGoal igoal = new IncrementalGoal(parts[0], parts[1], int.Parse(parts[2]));
+                        IncrementalGoal goal = new IncrementalGoal(parts[0], parts[1], int.Parse(parts[2]));
+                        _listOfGoals.Add(goal);
                     }
                 }
             }
