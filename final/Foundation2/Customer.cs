@@ -2,8 +2,8 @@ using System;
 
 public class Customer
 {
-    private string _customerName {get; set;}
-    private Address _address {get; set;}
+    private string _customerName;
+    private Address _address;
 
     public Customer (string customerName, Address address)
     {

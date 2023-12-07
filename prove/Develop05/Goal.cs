@@ -1,31 +1,42 @@
-
-using System.ComponentModel.DataAnnotations;
-
-class Goal 
+public abstract class Goal
 {
     //Attributes
     protected string _goal;
     protected string _name;
+    protected string _description;
     protected int _points;
-    //Constructor(s)
+    protected string _done = "[ ]";
+
+    //Constructor
     public Goal(string goal, string name, int points)
     {
         _goal = goal;
         _name = name;
         _points = points; 
     }
-    //Methods
-    virtual public string GetStringRepresentation()
+
+    public virtual void LoadGoal(string[] items)
+    {  
+        _goal = items[0];
+        _name = items[1];
+        _description = items[2];
+        _points = int.Parse(items[3]);
+    }
+    public virtual string GetStringRepresentation()
     {
-        string str = $"{_goal} | {_name} | {_points}";
+        string str = $"{_done}|{_goal}|{_name}|{_points}";
         return str;
     }
-    public void DisplayAttribute()
+    public virtual void MarkAsComplete()
     {
-
+        _done = "[x]";
     }
-    public void Write()
+    public virtual string GetDone()
     {
-
+        return _done;
+    }
+    public virtual int GetPoints()
+    {
+        return _points;
     }
 }

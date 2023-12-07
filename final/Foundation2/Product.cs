@@ -2,10 +2,10 @@ using System;
 
 public class Product
 {
-    private string _name {get; set;}
-    private string _id {get; set;}
-    private  double _price {get; set;}
-    private int _quantity {get; set;}
+    private string _name;
+    private string _id;
+    private  double _price;
+    private int _quantity;
 
     public Product (string name, string id, double price, int quantity)
     {
