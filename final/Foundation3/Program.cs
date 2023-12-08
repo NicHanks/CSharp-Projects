@@ -13,7 +13,7 @@ class Program
         lecture.DisplayStandardDetails();
         Console.WriteLine();
         lecture.DisplayLectureFullDetails();
-        Console.WriteLine("\n\n")
+        Console.WriteLine("\n\n");
 
 
         Address address2 = new Address ("Estr. Q.ta do Torneiro", "Lisbon", "Lisbon", "2700-144", "Portugal");
@@ -25,7 +25,7 @@ class Program
         reception.DisplayStandardDetails();
         Console.WriteLine();
         reception.DisplayReceptionsFullDetails();
-        Console.WriteLine("\n\n")
+        Console.WriteLine("\n\n");
 
 
         Address address3 = new Address ("5200 Emerald Pkwy", "Dublin", "OH", "43017", "USA");
